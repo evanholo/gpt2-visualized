@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import GPT2Demo from './GPT2Demo';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Interactive GPT-2 Demo</h1>
       </header>
+      <main>
+        <GPT2Demo />
+      </main>
+      <footer>
+        <p>Created for LLM presentation</p>
+      </footer>
     </div>
   );
 }
